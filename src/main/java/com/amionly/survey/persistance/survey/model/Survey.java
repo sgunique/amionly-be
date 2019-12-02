@@ -1,10 +1,15 @@
-package com.amionly.survey.persistance.model;
+package com.amionly.survey.persistance.survey.model;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 
 import lombok.Getter;
 import lombok.Setter;
-
-import javax.persistence.*;
-import java.util.Date;
 
 @Entity
 @Table(name = "surveys")
@@ -27,18 +32,13 @@ public class Survey {
             initialValue = 1000
     )
     private Long responseId;
-    
-    @Column(columnDefinition = "start_date")
+
     private Date startDate;
-    
-    @Column(columnDefinition = "end_date")
+
     private Date endDate;
 
-    @Column(columnDefinition = "is_editable")
     private boolean isEditable;
-    
-    
-    @Column(columnDefinition = "access_public")
+
     private boolean accessPublic;
-    
+
 }

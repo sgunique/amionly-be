@@ -1,6 +1,8 @@
-package com.amionly.survey.persistance.repository;
+package com.amionly.survey.persistance.survey.repository;
 
-import com.amionly.survey.persistance.model.Survey;
+
+import com.amionly.survey.persistance.survey.model.Survey;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
