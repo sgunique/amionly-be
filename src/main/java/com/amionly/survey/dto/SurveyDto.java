@@ -19,5 +19,4 @@ public class SurveyDto {
     private boolean isEditable;
 
     private boolean accessPublic;
-
 }
