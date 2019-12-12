@@ -38,7 +38,6 @@ public class SurveyController {
         return toSurveyDtoList(surveyService.getAllSurvey());
     }
 
-
 //    @PutMapping("/surveys/{surveyId}")
 //    public Survey updateSurvey(@PathVariable Long surveyId,
 //                                   @Valid @RequestBody Survey surveyRequest) {
